@@ -20,11 +20,12 @@
 		<style>
 			body{
 				margin: 0rem;
-				padding: 2rem 0 0 0;
-				box-shadow: 0px 0px 100px 0px rgb(203 179 16 / 40%) inset;
+				padding: 2rem 0 2rem 0;
+				box-shadow: 0px 0px 100px 0px rgb(115 203 16 / 40%) inset;
 				text-align: center;
 				font-size: 0.8rem;
 				font-family: cursive;
+				color: #344283;
 			}
 			#love-app p {
 				/* margin: 0.5rem; */
@@ -33,27 +34,133 @@
 			}
 			.love-content{
 				padding-top: 2rem;
+				padding-bottom: 6rem;
+			}
+			.love-img-box{
+				position: fixed;
+				left: 0;
+				top: 0;
+				width: 100%;
+				line-height: 100%;
+				height: 100%;
+				text-align: center;
+				background-color: #fff;
+				z-index: 520;
+			}
+			/* .love-text-box{
+				position: fixed;
+				left: 0;
+				top: 0;
+				width: 100%;
+				line-height: 100%;
+				text-align: center;
+				background-color: #fff;
+				z-index: 520;
+			} */
+			/* .love-img-box img{
+				max-width: 80%;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+			} */
+			#audio{
+				opacity: 0;
+			}
+			.love-content img {
+				max-width: 70%;
+			}
+			.love-tit{
+				font-weight: bold;
+				font-size: 1rem;
 			}
 		</style>
 	</head>
 	<body>
 		<div id="love-app">
-			<div class="love-tit">企业简介</div>
+			<div class="love-tit">生的惊艳的羊和不太聪明的狗</div>
 			<div class="love-content">
-				<p>是中国电子产业互联网知名企业</p>
-				<p>国内电子制造业供应链数字化和信息数据服务商</p>
-				<p>为全国八家共享制造类示范平台</p>
-				<p>PCBA工程服务等全流程</p>
-				<p>一站式的供应链服务</p>
-				<p>平台上游联接超千家电子元器件供应厂商</p>
-				<p>云汉芯城与上海交通大学</p>
-				<p></p>
-				<p></p>
-				<p></p>
-				<p></p>
-				<p></p>
+				<p>第一次坐在羊旁边撇羊的时候，</p>
+				<p>
+					<img src="9.gif" />
+				</p>
+				
+				<p>第一次感谢小羊的时候</p>
+				<p>
+					<img src="15.gif" />
+				</p>
+				
+				<p>跟羊一起要加班的时候，</p>
+				<p>
+					<img src="7.gif" />
+				</p>
+				<p>工作多要跟羊挑灯夜战的时候</p>
+				<p>
+					<img src="13.gif" />
+				</p>
+				
+				<p>第一次带羊去吃烧烤的时候</p>
+				<p>第一次跟羊走在云廊之上的长椅上，俯身吻羊的时候，</p>
+				<p>跟小羊一起听音乐的时候，</p>
+				<p>第一次带羊去小树林带时候</p>
+				<p>
+					<img src="14.gif" />
+				<p>第一次被羊敲的时候</p>
+				<p>
+					<img src="12.gif" />
+				</p>
+				</p>
+				<p>第二次带羊去小树林带时候，</p>
+				<p>第三次...</p>
+				<p>第N次带羊去小树林的时候，</p>
+				<p>去小树林堵小羊的时候，</p>
+				<p>第一次带小羊回家玩VR的时候，</p>
+				<p>追着飞奔的小羊奔跑在雨中的时候，</p>
+				<p>扶着醉醺醺的小羊回家的时候，</p>
+				<p>跟羊在电梯里追逐的时候</p>
+				<p>把醉醺醺的小羊抱着放到床上休息的时候，</p>
+				<p>第一次把小羊抱在怀里的时候，</p>
+				<p>带着一杯就上头到小羊压马路的时候，</p>
+				<p>第一次下厨投喂小羊的时候，</p>
+				<p>看着小羊把狗子鞋带绑起来的时候，</p>
+				<p>第一次跟小羊待在家里吃着零食期待台风天的时候，</p>
+				<p>带着小羊在西塘的小阁楼把酒言欢的时候，</p>
+				<p>带着小羊骑着小电驴奔驰在宁波的大街上的时候，</p>
+				<p>第一次回家就能吃上饭小羊做的饭的时候，</p>
+				<p>第一次感觉到两个人比一个人要开心的时候，</p>
+				<p>第一次满脑子塞满小羊患得患失的时候，</p>
+				<p>第一次惹小羊生气不耐烦的时候，</p>
+				<p>第一次听小羊唱歌的时候，</p>
+				<p>在上海跟小羊一起站城市最高处的时候，</p>
+				<p>默默吃小羊的醋的时候，</p>
+				<p>想带着小羊走遍每个角落的时候，</p>
+				<p>跟小羊分享心里话的时候，</p>
+				<p>用自以为是的方法治愈小羊的时候，</p>
+				<p>，，，</p>
+				<p>时间停滞</p>
+				<p>，</p>
+				<p>
+					<img src="love.jpeg" />
+				</p>
 			</div>
+			<audio id="audio" autoplay='autoplay' loop="loop" preload="auto" controls>
+			  <source src="https://dict.youdao.com/dictvoice?audio=discount+coupon" type="audio/mpeg">
+			  <source src="https://dict.youdao.com/dictvoice?audio=discount+coupon" type="audio/ogg">
+			</audio>
 		</div>
+		<!-- <div class="love-img-box">
+			<img src="ic.png" />
+		</div>
+		<div class="love-text-box"></div> -->
+		<script>
+			var audio = document.getElementById('audio');
+			audio.src = 'https://dict.youdao.com/dictvoice?audio=discount+coupon';
+			audio.loop = true;
+			audio.autoplay = true;
+			document.getElementById('love-app').addEventListener('click',function(){
+				audio.play();
+				audio.style.opacity = '0';
+			})
+		</script>
 	</body>
 </html>
 
@@ -63,40 +170,9 @@
 羊&狗
 
 
-第一次坐在羊旁边撇羊的时候，
-跟羊一起要加班的时候，
-工作多跟羊分隔两地要挑灯夜战的时候，
-第一次带羊去吃烧烤的时候，
-第一次跟羊走在云廊之上的长椅上，俯身吻羊的时候，
-跟小羊一起听音乐的时候，
-第一次带羊去小树林带时候，
-第二次带羊去小树林带时候，
-第三次...
-第N次带羊去小树林的时候，
-去小树林堵小羊的时候，
-第一次带小羊回家玩VR的时候，
-扶着醉醺醺的小羊回家的时候，
-把醉醺醺的小羊抱着放到床上休息的时候，
-第一次把小羊抱在怀里的时候，
-带着一杯就上头到小羊压马路的时候，
-第一次下厨投喂小羊的时候，
-看着小羊把狗子鞋带绑起来的时候，
-第一次跟小羊待在家里吃着零食期待台风天的时候，
-带着小羊在西塘的小阁楼把酒言欢的时候，
-带着小羊骑着小电驴奔驰在宁波的大街上的时候，
-第一次回家就能吃上饭的时候，
-第一次感觉到两个人比一个人要开心的时候，
-第一次满脑子塞满小羊患得患失的时候，
-第一次惹小羊生气不耐烦的时候，
-第一次听小羊唱歌的时候，
-在上海跟小羊一起站城市最高处的时候，
-默默吃小羊的醋的时候，
-想带着小羊走遍每个角落的时候，
-跟小羊分享心里话的时候，
-用自以为是的方法治愈小羊的时候，
-，，，
-时间停滞
-，
+
+
+
 
 
  -->
