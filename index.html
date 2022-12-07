@@ -165,7 +165,7 @@
 		<div class="love-text-box"></div> -->
 		
 		<div id="textShowContent" style="position: fixed;left: 0;top: 0;z-index: 100;background: #000;width: 100%;height: 100%;opacity: .95;display:none">
-			<div id="myContent" style="color: #fff;font-size: 18px;position:absolute;top:26%;width:100%;left:0;text-aligin:center">
+			<div id="myContent" style="color: #fff;font-size: 18px;position:absolute;top:15%;width:100%;left:0;text-aligin:center">
 					<span id="blink" style="display: none;">_</span></div>
 			<div id="contentToWrite" style="display:none">
 					你来了<br>
@@ -184,7 +184,7 @@
 					就如我们这个专属的小窝，<br>
 					会永远更新下去...<br>
 					<br>
-					-----------------------Just for You, Jing<br>
+					-----------------------Love You Forever, Jing<br>
 			</div>
 		</div>
 		
@@ -278,6 +278,9 @@
 				writeContent(true);
 				seetimes = seetimes + 1;
 				localStorage.setItem('seetimes',seetimes);
+				setTimeout(function(){
+					$('#textShowContent').fadeOut(1000);
+				},50000)
 			}else{
 				var _date = new Date().getFullYear()+'❤️'+(Number(new Date().getMonth())+1)+'❤️'+new Date().getDate();;
 				$('#commonDialog').html('欢迎回家，哥哥的小羊  <span style="font-size:10px">'+_date+'</span>').show();
