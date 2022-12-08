@@ -102,7 +102,9 @@
 				</p>
 				
 				<p>第一次带羊去吃烧烤的时候</p>
+				<p>第一次拿着做游戏的接口，俯身跟小羊1毫米的距离，心跳超快的时候，</p>
 				<p>第一次跟羊走在云廊之上的长椅上，俯身吻羊的时候，</p>
+				<p>第一次带羊玩VR，在后面抱着小羊的时候，</p>
 				<p>跟小羊一起听音乐的时候，</p>
 				<p>第一次带羊去小树林带时候</p>
 				<p>
@@ -143,7 +145,8 @@
 				<p>载着小羊在回家的路上，看到绝美夕阳的时候，</p>
 				<p>狗第一次感觉到自己肾不行的时候，（没有被羊强迫修改😭），</p>
 				<p>喝醉酒的小羊，踹倒啤酒阿姨的厕所，狗搀扶着小羊默默溜走的时候，</p>
-				<p>第一次，小羊帮我剪指甲的时候，</p>
+				<p>第一次，小羊帮我剪指甲的时候，我想着，指甲如果从来不再不长长就好了，永远留下羊的痕迹</p>
+				<p>第一次，帮小羊剪指甲的时候，用处了毕生公里想剪出漂亮的轮廓</p>
 				<p>
 					<img src="17.png" />
 				</p>
@@ -188,7 +191,7 @@
 			</div>
 		</div>
 		
-		<div id="commonDialog" style="background: rgba(0, 0, 0, 0.5);
+		<div id="commonDialog" style="background: rgb(89 139 38 / 80%);
 			width: 90%;
 			height: 100px;
 			line-height: 100px;
@@ -198,7 +201,7 @@
 			right: 0;
 			bottom: 0;
 			margin: auto;
-			box-shadow: -15px 15px 15px rgb(6 17 47 / 70%);
+			box-shadow: rgb(162 141 56 / 70%) -15px 15px 15px;
 			color: #fff;
 			font-size: 28px;
 			border-radius: 10px;
@@ -216,11 +219,6 @@
 				audio.play();
 				audio.style.opacity = '0'; 
 			})
-			/* 你来了 小羊
-			   好久不见
-			   有时候我在房间寻找
-			   貌似处处都是你的踪迹
-		    */
 		</script>
 		
 		
@@ -273,7 +271,9 @@
 				setTimeout('blinkSpan()',100);
 			};
 			var seetimes = Number(localStorage.getItem('seetimes')) || 0;
-			if(seetimes < 2){
+			if(seetimes < 2 || (seetimes < 3 && Math.random()< 0.4) ||  (seetimes < 5 && Math.random()< 0.2)
+				|| (seetimes < 6 && Math.random()< 0.1) || (Math.random()< 0.05)
+			){
 				$('#textShowContent').show();
 				writeContent(true);
 				seetimes = seetimes + 1;
