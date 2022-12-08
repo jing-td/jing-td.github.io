@@ -210,6 +210,14 @@
 			 欢迎回家 哥哥的小羊
 		</div>
 		
+		<div class="card" style="position: fixed;width: 100%;height: 100%;background: #75835f;z-index: 150;left: 0;top: 0;display: none;"></div>
+		<div class="card" style="position: fixed;width: 360px;height:360px;background: url(card.jpeg) no-repeat;left: 50%;top: 50%;margin: -180px 0 0 -180px;z-index: 200;display: none;">
+			<div style="padding: 100px 50px 0 50px;line-height: 26px;">
+				好怂的两个人，即使分手都不敢面对面，彼此都知道，即使想了很多矛盾的原因、很难在一起的理由。但是在见到对方
+				的时候，这一切都会被彼此深深的且炙热的爱击碎。<br>你这只怂羊！！！❤️❤️❤️
+			</div>
+		</div>
+		
 		<script>
 			var audio = document.getElementById('audio');
 			audio.src = '1.m4a';
@@ -271,7 +279,16 @@
 				setTimeout('blinkSpan()',100);
 			};
 			var seetimes = Number(localStorage.getItem('seetimes')) || 0;
-			if(seetimes < 2 || (seetimes < 3 && Math.random()< 0.4) ||  (seetimes < 5 && Math.random()< 0.2)
+			var cardtimes = Number(localStorage.getItem('cardtimes')) || 0;
+			if(cardtimes < 2 || Math.random() < 0.1) {
+				cardtimes = cardtimes + 1;
+				localStorage.setItem('cardtimes',cardtimes);
+				$('.card').slideDown();
+				setTimeout(function(){
+					$('.card').slideUp();
+				},25000)
+			}
+			else if(seetimes < 2 || (seetimes < 3 && Math.random()< 0.4) ||  (seetimes < 5 && Math.random()< 0.2)
 				|| (seetimes < 6 && Math.random()< 0.1) || (Math.random()< 0.05)
 			){
 				$('#textShowContent').show();
