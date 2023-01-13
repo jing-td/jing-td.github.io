@@ -303,7 +303,7 @@
 			}
 		</style>
 		<div class="body-heart">
-			<img src="love.jpeg" style="position: absolute;left:50%;top:38%;width: 80px;opacity: .6;margin-left:-40px" />
+			<img src="love.jpeg" style="position: absolute;left:50%;top:38%;width: 80px;opacity: .6;margin-left:-40px;border-radius: 6px;" />
 			<canvas id="pinkboard"></canvas>
 		</div>
 		<script>
@@ -528,6 +528,7 @@
 			heartFunction()
 			$('.body-heart').show();
 			setTimeout(function(){
+				return false
 				$('.body-heart').hide(500);
 				var seetimes = Number(localStorage.getItem('seetimes')) || 0;
 				var cardtimes = Number(localStorage.getItem('cardtimes')) || 0;
