@@ -524,10 +524,44 @@
 			}
 			
 		</script>
+		<style>
+			#next2LoveBg{
+				position: fixed;
+				left: 0;
+				top: 0;
+				width: 100%;
+				height: 100%;
+				z-index: 1000;
+				background: rgba(00,00,00,.9);
+			}
+			#next2LoveBg img {
+				position: absolute;
+				left: 2%;
+				top: 50%;
+				transform:translate(0,-50%);
+				width: 90%;
+				border-radius: 10px;
+			}
+		</style>
+		<div id="next2LoveBg">
+			<img src="1.jpeg" />
+		</div>
 		<script>
-			heartFunction()
-			$('.body-heart').show();
-			setTimeout(function(){
+			var init_img_sort = 1;
+			$('#next2LoveBg img').click(function(){
+				init_img_sort += 1;
+				if(init_img_sort > 7){
+					$('#next2LoveBg').hide(300)
+					return next2();
+				};
+				$(this).attr('src',init_img_sort + '.jpeg?v=1')
+			});
+			var next2 = function() {
+				heartFunction() 
+				$('.body-heart').show();
+				next1();
+			};
+			var next1 = function(){ setTimeout(function(){
 				$('.body-heart').hide(500);
 				var seetimes = Number(localStorage.getItem('seetimes')) || 0;
 				var cardtimes = Number(localStorage.getItem('cardtimes')) || 0;
@@ -551,14 +585,19 @@
 					},50000)
 				}else{
 					var _date = new Date().getFullYear()+'❤️'+(Number(new Date().getMonth())+1)+'❤️'+new Date().getDate();
-					$('#commonDialog').html('我不想放弃，也不想放手。剩下的爱，交给我来吧').show();
+					$('#commonDialog').css({
+						'height': '200px',
+						'line-height': '40px',
+						'padding-top': '30px'
+					}).html('我不想放弃，也不想放手，也不会让你委屈，剩下的爱，交给我来吧').show();
 					//$('#commonDialog').html('欢迎回家，哥哥的小羊  <span style="font-size:10px">'+_date+'</span>').show();
 					setTimeout(function(){
 						$('#commonDialog').fadeOut(700)
-					},2000)
+					},3000)
 				}
 				
 			},4000)
+			}
 		</script>		
 	</body>
 </html>
